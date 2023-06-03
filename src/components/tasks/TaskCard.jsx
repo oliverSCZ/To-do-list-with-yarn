@@ -6,6 +6,7 @@ const handleChange = () => {
   task.status = !task.status
   const newArrayTasks = tasks.filter(taskItem => taskItem.id != task.id);
   setTasks([...newArrayTasks, task])
+  localStorage.setItem('tasks', JSON.stringify(tasks));
   
 }
 

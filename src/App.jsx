@@ -1,11 +1,18 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { MainLayout } from './layouts/MainLayout'
 import { FormTask, ListTasksCompleted, ListTasksPending, TaskCard } from './components'
 
 const App = () => {
 
-  const [tasks, setTasks] = useState([
-  ])
+  const [tasks, setTasks] = useState([])
+
+  useEffect( () => {
+    const getAllTasksFromLS = () => {
+      const tasksLocalStorage = JSON.parse(localStorage.getItem('tasks')) ?? [];
+      setTasks(tasksLocalStorage)
+    }
+    getAllTasksFromLS();
+  }, [] );
 
   return (
    <MainLayout>

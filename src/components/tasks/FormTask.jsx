@@ -7,7 +7,11 @@ const [description, setDescription] = useState('');
 
 const handleSubmit = (e) => {
   e.preventDefault();
+  if ( title.trim() == 0 || description.trim() == 0 )
+    return
   setTasks([...tasks, {title, description, status:false, id: new Date}]);
+  localStorage.setItem('tasks', JSON.stringify([...tasks, {title, description, status:false, id: new Date}]));
+
   setTitle('');
   setDescription('');
 }
