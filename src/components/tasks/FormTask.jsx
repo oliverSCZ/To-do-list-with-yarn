@@ -8,7 +8,8 @@ const [description, setDescription] = useState('');
 const handleSubmit = (e) => {
   e.preventDefault();
   setTasks([...tasks, {title, description, status:false, id: new Date}]);
-  console.log({title, description})
+  setTitle('');
+  setDescription('');
 }
 
 
