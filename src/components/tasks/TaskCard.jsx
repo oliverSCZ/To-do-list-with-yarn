@@ -12,7 +12,7 @@ const handleChange = () => {
 
   return (
     <form
-      className='w-full md:w-1/2 py-3 px-5 mb-5 rounded-xl flex gap-3 hover:scale-105 hover:shadow-lg transition-all'
+      className='w-1/2 py-3 px-5 mb-5 rounded-xl flex gap-3 hover:scale-105 hover:shadow-lg transition-all'
     >
       <input
         type='checkbox'
