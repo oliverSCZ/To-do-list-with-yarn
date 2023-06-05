@@ -4,7 +4,7 @@ This app allows the user to easily store a list of tasks or chores, edit their d
 
 ## Live Demo
 
-[Live Demo]([https://danalvrz.github.io/gottaDoList/dist/](https://silly-pixie-e73d05.netlify.app/))
+[Live Demo](https://silly-pixie-e73d05.netlify.app/))
 
 ## Built With
 
